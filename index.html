@@ -6,7 +6,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INTRODUCTION TO HTML</title>
+  <title>DOG PHOTO APP</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,16 +22,58 @@
       <h2>Dog Photos</h2>
       <!--TODO: Add link to dog photos Step6: Indent P element -->
       <p>Be a dog foster parent <a href="https://paws.org.ph/dogs/" target="_blank">Go to Paws PH</a></p>
-      <a href="https://www.pexels.com/search/dog/"><img src="images/pexels-rodrigo-bonzerr-s-lopez-12127202.jpg"
-          alt="This is my dog mihawk" width="400px" height="400px"></a>
     </section>
-
-     <!--*******************************************SECTION 2****************************************************-->
+    <figure>
+      <a href="https://www.pexels.com/search/dog/"><img src="https://dogtime.com/assets/uploads/gallery/shih-tzu-dog-breed-pictures/shih-tzu-breed-picture-1.jpg"
+        alt="This is my dog Shua" width="400px" height="400px"></a>
+    </figure>
     <section>
       <h2>DOG LISTS</h2>
+      <h3>Things dogs love:</h3>
+      <ul>
+        <li>Seeing their humans</li>
+        <li>Dog treats</li>
+        <li>Dog toys</li>
+      </ul>
     </section>
-   
+    <figure>
+      <a href="https://www.pexels.com/search/pizza/"><img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pizza-from-Scratch_EXPS_FT20_8621_F_0505_1_home.jpg"
+        alt="A picture of pizza width="400px" height="400px"></a>
+      <figcaption>My dog loves <em>pizza.</em></figcaption>
+    </figure>
+    <h3>Three things dogs hate:</h3>
+    <ol>
+      <li>Thunder</li>
+      <li>Taking a bath</li>
+      <li>Cats</li>
+    </ol>
+    <figure>
+      <a href="https://www.pexels.com/search/dog/"></a><img src="https://www.dig-in.com.au/wp-content/uploads/2022/03/shutterstock_1720442875.jpg"
+      alt="This is my dog Shua" width="400px" height="400px"></a>
+    </figure>
+    <figcaption>Dogs <strong>hate</strong> cats</figcaption>
+
+    <!--*******************************************SECTION 2****************************************************-->
+    <h2>Dog Form</h2>
+    <form action="">
+      <fieldset>
+        <legend>Is your dog an indoor or outdoor dog?</legend>
+        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>Indoor</label>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What is your dogs personality?</legend>
+        <input id="loving" value="loving" type="checkbox" name="personality"checked><label for="loving">Loving</label>
+        <input id="energetic" value="energetic" type="checkbox"><label for="energetic">Energetic</label>
+        <input id="lazy"value="lazy" type="checkbox"><label for="lazy">Lazy</label>
+      </fieldset>
+      <input type="text" name="cutedogsurl" placeholder="cute dogs url" required>
+      <button type="submit"> Submit </button> 
+    </form>
   </main>
 </body>
+<footer>
+  <p>No copyright - <a href="www.freedogphotos.com" target="_blank">Inspired by Doggo World</a></p>
+</footer>
 
 </html>
